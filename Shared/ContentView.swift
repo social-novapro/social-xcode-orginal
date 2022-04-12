@@ -4,7 +4,12 @@
 //
 //  Created by Daniel Kravec on 2022-04-12.
 //
-
+// https://medium.com/@nutanbhogendrasharma/consume-rest-api-in-swiftui-ios-mobile-app-b3c5d6ecf401
+//
+// https://stackoverflow.com/questions/67455466/how-to-add-http-header-in-swiftui-and-how-to-get-data-from-json
+//
+// https://www.hackingwithswift.com/books/ios-swiftui/sending-and-receiving-codable-data-with-urlsession-and-swiftui
+//
 import SwiftUI
 import CoreData
 

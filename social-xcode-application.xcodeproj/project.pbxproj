@@ -17,6 +17,11 @@
 		651BC7B42805E90E00564392 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BC79E2805E90D00564392 /* Persistence.swift */; };
 		651BC7B52805E90E00564392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651BC79F2805E90E00564392 /* Assets.xcassets */; };
 		651BC7B62805E90E00564392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651BC79F2805E90E00564392 /* Assets.xcassets */; };
+		651BC7C22806122B00564392 /* loginSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BC7C12806122B00564392 /* loginSplashScreen.swift */; };
+		651BC7C42806123D00564392 /* createAccountSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BC7C32806123D00564392 /* createAccountSplashScreen.swift */; };
+		651BC7C8280612CF00564392 /* userLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BC7C7280612CF00564392 /* userLogin.swift */; };
+		651BC7CB2806132300564392 /* interact-user-schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BC7CA2806132300564392 /* interact-user-schema.swift */; };
+		651BC7CD2806133C00564392 /* interact-user-priv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BC7CC2806133C00564392 /* interact-user-priv.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		651BC7A42805E90E00564392 /* social-xcode-application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "social-xcode-application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		651BC7AA2805E90E00564392 /* social-xcode-application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "social-xcode-application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		651BC7AC2805E90E00564392 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		651BC7C12806122B00564392 /* loginSplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginSplashScreen.swift; sourceTree = "<group>"; };
+		651BC7C32806123D00564392 /* createAccountSplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createAccountSplashScreen.swift; sourceTree = "<group>"; };
+		651BC7C7280612CF00564392 /* userLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userLogin.swift; sourceTree = "<group>"; };
+		651BC7CA2806132300564392 /* interact-user-schema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "interact-user-schema.swift"; sourceTree = "<group>"; };
+		651BC7CC2806133C00564392 /* interact-user-priv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "interact-user-priv.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,8 @@
 		651BC7992805E90D00564392 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				651BC7C52806126900564392 /* models */,
+				651BC7BF280611FA00564392 /* Views */,
 				651BC79C2805E90D00564392 /* social_xcode_applicationApp.swift */,
 				651BC79D2805E90D00564392 /* ContentView.swift */,
 				651BC79E2805E90D00564392 /* Persistence.swift */,
@@ -84,6 +96,49 @@
 				651BC7AC2805E90E00564392 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		651BC7BF280611FA00564392 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				651BC7C02806121900564392 /* BeginSplashScreens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		651BC7C02806121900564392 /* BeginSplashScreens */ = {
+			isa = PBXGroup;
+			children = (
+				651BC7C12806122B00564392 /* loginSplashScreen.swift */,
+				651BC7C32806123D00564392 /* createAccountSplashScreen.swift */,
+			);
+			path = BeginSplashScreens;
+			sourceTree = "<group>";
+		};
+		651BC7C52806126900564392 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				651BC7C92806130000564392 /* users */,
+				651BC7C6280612C100564392 /* auth */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		651BC7C6280612C100564392 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				651BC7C7280612CF00564392 /* userLogin.swift */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		651BC7C92806130000564392 /* users */ = {
+			isa = PBXGroup;
+			children = (
+				651BC7CA2806132300564392 /* interact-user-schema.swift */,
+				651BC7CC2806133C00564392 /* interact-user-priv.swift */,
+			);
+			path = users;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,9 +240,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				651BC7AD2805E90E00564392 /* social_xcode_application.xcdatamodeld in Sources */,
+				651BC7CB2806132300564392 /* interact-user-schema.swift in Sources */,
+				651BC7C22806122B00564392 /* loginSplashScreen.swift in Sources */,
 				651BC7B32805E90E00564392 /* Persistence.swift in Sources */,
 				651BC7AF2805E90E00564392 /* social_xcode_applicationApp.swift in Sources */,
+				651BC7C42806123D00564392 /* createAccountSplashScreen.swift in Sources */,
 				651BC7B12805E90E00564392 /* ContentView.swift in Sources */,
+				651BC7CD2806133C00564392 /* interact-user-priv.swift in Sources */,
+				651BC7C8280612CF00564392 /* userLogin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
